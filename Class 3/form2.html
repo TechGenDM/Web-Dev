@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+</head>
+
+<style>
+    input{
+        background-color: bisque;
+    }
+</style>
+
+<body style="background-color: black; color: aliceblue;">
+
+    <div style="color: rgb(69, 210, 30);">
+        <h1>Admission <span style="color: blueviolet;">Form</span></h1>
+    </div>
+
+    <form>
+
+        <div>
+            <label>
+                Full Name:
+                <input type="text" required placeholder="Enter your full name">
+            </label><br><br>
+        </div>
+
+        <div></div>
+        <label>
+            Email:
+            <input type="email" required placeholder="Enter email address">
+        </label><br><br>
+        </div>
+
+        <div>
+            <label>
+                Phone Number:
+                <input type="tel" pattern="[0-9]{10}" maxlength="10" minlength="10" required
+                    placeholder="Enter 10 digit number">
+            </label><br><br>
+        </div>
+
+        <div>
+            <label>
+                Age:
+                <input type="number" min="15" max="60" required placeholder="Enter">
+            </label><br><br>
+
+
+
+            <label>
+                Date of Birth:
+                <input type="date" min="2006-01-01" max="2010-01-01">
+            </label><br><br>
+        </div>
+
+        <div>
+            <p>
+                Gender:
+                <input type="radio" name="Gender">
+                <label>Male</label>
+                <input type="radio" name="Gender">
+                <label>Female</label>
+                <input type="radio" name="Gender">
+                <label>Other</label>
+            </p>
+        </div>
+
+        <div>
+            <p>Services:
+                <br>
+                <label>Bus Services
+                    <input type="checkbox" name="Services">
+                </label>
+                <br>
+                <label>Mess Services
+                    <input type="checkbox" name="Services">
+                </label>
+                <br>
+            <p>Blood Group:</p>
+            <select>
+                <option>B+</option>
+                <option>O+</option>
+                <option>A+</option>
+                <option>AB+</option>
+            </select>
+            </p>
+        </div>
+
+        <div>
+            <label>
+                Describle yourslef in <span style="color: brown;">200</span> words
+                <br><br>
+                <textarea required placeholder="Enter here" style="background-color: bisque;"></textarea>
+                </div>
+            </label><br>
+        </div>
+
+        <div><button style="background-color: red;">SUMBIT</button></div>
+
+    </form>
+</body>
+
+</html>
